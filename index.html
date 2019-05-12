@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <title>Programming books</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="On this website you can find books about programming">
+        <meta name="keywords" content="Books, programming, coding, development">
+        <script src="index.js"></script>
+        <link rel="stylesheet" type="text/css" href="css_reset.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato" />
+    </head>
+    <body onload="init()">
+        <header>
+            <h1>PROGRAMMING BOOKS</h1>
+        </header>
+        <div class="flex-wrapper-page">
+            <main class="flex-item-main">
+                <ol class="flex-wrapper-all-books" id="bookWrapper">
+
+                </ol>
+            </main>
+
+            <aside class="flex-item-aside">
+                <h2>Sort by</h2>
+                <ul class="line--full-width-solid">
+                    <li><input name="sort" type="radio" id="radioButtonPages"><label for="radioButtonPages"><i>Number of pages</i></label></li>
+                    <li><input name="sort" type="radio" id="radioButtonReleaseDate"><label for="radioButtonReleaseDate"><i>Release date</i></label></li>
+                    <li><input name="sort" type="radio" id="radioButtonAuthor"><label for="radioButtonAuthor"><i>Author's surname</i></label></li>
+                </ul>
+                <h2>Show only books </h2>
+                <ul class="line--full-width-solid">
+                    <li>having more than<input type="text" name="filter" onfocus="this.value=''" id="minPages"> pages</li>
+                </ul>
+                <button id="clearButton">Clean</button>
+            </aside>
+        </div>
+        <div id="modal" class="modal">
+            <div class="modal__content">
+                <span class="modal__close" id="close">&times;</span>
+                <img id="modalImg">
+            </div>
+        </div>
+
+        <footer>
+        </footer>
+    </body>
+</html>
